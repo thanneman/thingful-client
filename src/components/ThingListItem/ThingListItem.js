@@ -6,7 +6,6 @@ import './ThingListItem.css'
 export default class ThingListItem extends Component {
   render() {
     const { thing } = this.props
-
     return (
       <Link to={`/thing/${thing.id}`} className='ThingListItem'>
         <div className='ThingListItem__image' style={{backgroundImage: `url(${thing.image})`}} />
